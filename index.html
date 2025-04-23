@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grade</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Students Grade</h1>
+    <div style="display: flex; flex-direction: column; justify-content: end; align-items: center; gap: 30px;">
+        <div>
+            <label style="font-size: 26px;" for="studentName">Student's Name: </label>
+            <input style="font-size: 20px; border-radius: 16px;" type="text" id="studentName" placeholder="Enter student's name" required>
+        </div>
+        <div>
+            <label style="font-size: 26px; padding-right: 8px;" for="studentMark">Student's Mark: </label>
+            <input style="font-size: 20px; border-radius: 16px;" type="number" id="studentMark" placeholder="Enter student's mark" required>
+        </div>
+        <div>
+            <button onclick="showGreeting()" style="font-size: 20px; border-radius: 16px;" type="button">Submit</button>
+        </div>
+        <div id="greetingBox">
+            <!-- Greeting will be displayed here dynamically -->
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
